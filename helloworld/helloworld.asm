@@ -4,7 +4,7 @@
 ; Run with: ./helloworld
 
 SECTION .data
-msg	db	'Hello World!', 0AH ; assign msg variable with your message string
+msg	db	'Hello Aldin!', 0AH ; assign msg variable with your message string
 
 SECTION .text
 global _start

@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Compile Assembly with NASM"
+read -p "File name: " FILENAME
+echo "Compiling file..."
+nasm -f elf $FILENAME.asm
+ld -m elf_i386 $FILENAME.o -o $FILENAME
+echo -e "Runing file $FILENAME... \n"
+./$FILENAME
